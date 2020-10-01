@@ -311,6 +311,7 @@ enum {
   EM_RISCV = 243,         // RISC-V
   EM_LANAI = 244,         // Lanai 32-bit processor
   EM_BPF = 247,           // Linux kernel bpf virtual machine
+  EM_RISCW = 999,         // RISC-W
 };
 
 // Object file classes.
@@ -630,6 +631,11 @@ enum : unsigned {
 // ELF Relocation types for RISC-V
 enum {
 #include "ELFRelocs/RISCV.def"
+};
+
+// ELF Relocation types for RISC-W
+enum {
+#include "ELFRelocs/RISCW.def"
 };
 
 // ELF Relocation types for S390/zSeries
