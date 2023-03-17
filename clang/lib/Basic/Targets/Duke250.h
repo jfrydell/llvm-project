@@ -1,4 +1,4 @@
-//===--- RISCW.h - Declare RISCW target feature support ---------*- C++ -*-===//
+//===--- Duke250.h - Declare Duke250 target feature support ---------*- C++ -*-===//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,12 +6,12 @@
 //
 //===----------------------------------------------------------------------===//
 //
-// This file declares RISCWTargetInfo objects.
+// This file declares Duke250TargetInfo objects.
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef LLVM_CLANG_LIB_BASIC_TARGETS_RISCW_H
-#define LLVM_CLANG_LIB_BASIC_TARGETS_RISCW_H
+#ifndef LLVM_CLANG_LIB_BASIC_TARGETS_Duke250_H
+#define LLVM_CLANG_LIB_BASIC_TARGETS_Duke250_H
 
 #include "clang/Basic/TargetInfo.h"
 #include "clang/Basic/TargetOptions.h"
@@ -21,14 +21,14 @@
 namespace clang {
 namespace targets {
 
-class LLVM_LIBRARY_VISIBILITY RISCWTargetInfo : public TargetInfo {
+class LLVM_LIBRARY_VISIBILITY Duke250TargetInfo : public TargetInfo {
   static const char *const GCCRegNames[];
 
 public:
-  RISCWTargetInfo(const llvm::Triple &Triple, const TargetOptions &)
+  Duke250TargetInfo(const llvm::Triple &Triple, const TargetOptions &)
     : TargetInfo(Triple) {
     // Description string has to be kept in sync with backend string at
-    // llvm/lib/Target/RISCW/RISCWTargetMachine.cpp
+    // llvm/lib/Target/Duke250/Duke250TargetMachine.cpp
     resetDataLayout("e"
                     // ELF name mangling
                     "-m:e"
@@ -77,4 +77,4 @@ public:
 } // namespace targets
 } // namespace clang
 
-#endif // LLVM_CLANG_LIB_BASIC_TARGETS_RISCW_H
+#endif // LLVM_CLANG_LIB_BASIC_TARGETS_Duke250_H

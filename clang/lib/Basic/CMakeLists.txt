@@ -79,7 +79,7 @@ add_clang_library(clangBasic
   Targets/PNaCl.cpp
   Targets/PPC.cpp
   Targets/RISCV.cpp
-  Targets/RISCW.cpp
+  Targets/Duke250.cpp
   Targets/SPIR.cpp
   Targets/Sparc.cpp
   Targets/SystemZ.cpp

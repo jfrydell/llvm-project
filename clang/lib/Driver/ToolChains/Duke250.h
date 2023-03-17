@@ -1,4 +1,4 @@
-//===--- RISCW.h - RISCW ToolChain Implementations --------------*- C++ -*-===//
+//===--- Duke250.h - Duke250 ToolChain Implementations --------------*- C++ -*-===//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,8 +6,8 @@
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_RISCW_H
-#define LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_RISCW_H
+#ifndef LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_Duke250_H
+#define LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_Duke250_H
 
 #include "Gnu.h"
 #include "clang/Driver/ToolChain.h"
@@ -16,9 +16,9 @@ namespace clang {
 namespace driver {
 namespace toolchains {
 
-class LLVM_LIBRARY_VISIBILITY RISCWToolChain : public ToolChain {
+class LLVM_LIBRARY_VISIBILITY Duke250ToolChain : public ToolChain {
 public:
-  RISCWToolChain(const Driver &D, const llvm::Triple &Triple,
+  Duke250ToolChain(const Driver &D, const llvm::Triple &Triple,
                  const llvm::opt::ArgList &Args);
 
   bool isPICDefault() const override;
@@ -44,4 +44,4 @@ public:
 } // end namespace driver
 } // end namespace clang
 
-#endif // LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_RISCW_H
+#endif // LLVM_CLANG_LIB_DRIVER_TOOLCHAINS_Duke250_H
